@@ -38,9 +38,9 @@ header {
 header nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 5PX;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 header nav li {
@@ -300,6 +300,7 @@ footer {
 <body>
     <!-- Header Section -->
     <header>
+        <img src="PT\Screenshot 2024-08-01 154028.png" alt="logo" style="height: 45px; width: 150px; border-radius: 5px; float: left; justify-content: space-evenly;">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -406,7 +407,6 @@ footer {
     </div>
 </section>
 
-    <!-- Call to Action Section -->
     <section class="cta">
         <div class="container">
             <h2>Get Your Smart Shopping Cart Today!</h2>
@@ -414,36 +414,30 @@ footer {
         </div>
     </section>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 Smart Shopping Cart. All rights reserved.</p>
     </footer>
 
     <script >
-        // Add event listener to hero button
 document.querySelector('.hero button').addEventListener('click', function() {
-    // Scroll to features section
     document.querySelector('.features').scrollIntoView({ behavior: 'smooth' });
 });
 
-// Add event listener to cta button
+
 document.querySelector('.cta button').addEventListener('click', function() {
-    // Open demo sign-up form
     alert('Demo sign-up form will open here');
 });
 
-// Add event listener to pricing table buttons
+
 document.querySelectorAll('.pricing-table button').forEach(function(button) {
     button.addEventListener('click', function() {
-        // Handle sign-up or contact us button click
         alert('Sign-up or contact us form will open here');
     });
 });
 
-// Add event listener to contact form submit
+
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    // Handle form submission (e.g., send email or store in database)
     alert('Form submitted successfully!');
 });
     </script>
